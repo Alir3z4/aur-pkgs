@@ -1,4 +1,11 @@
 aur-pkgs
 ========
+All the pkgs contributed to the [AUR](https://aur.archlinux.org/).
 
-These are AUR PKGS what do you expect ?
+* [Alir3z4 AUR Packages at AUR](https://aur.archlinux.org/packages.php?SeB=m&K=Alir3z4)
+
+Issues/Bugs
+===========
+If you find any issue or bug or whatever that would broke the pkg, of course the best place to report is tha pkg's comments itself at AUR
+
+
