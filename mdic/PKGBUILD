@@ -1,0 +1,27 @@
+# Contributor & Maintainer: Alireza Savand <alireza.savand with love gmail:|>
+# Contributors: Xianwen Chen <xianwen.chen@gmail.com>
+#               mutlu_inek <mutlu_inek@yahoo.de>
+
+pkgname=mdic
+pkgver=0.8.1
+pkgrel=1
+pkgdesc="A Qt-based program to access multilingual dictionaries and Google Translate."
+arch=('i686' 'x86_64')
+url="http://mdic.sourceforge.net/"
+license=('GPL3')
+depends=('qt' 'aspell')
+makedepends=('cmake' 'automoc4')
+conflicts=('kdemod-extragear-mdic')
+source=(http://downloads.sourceforge.net/project/$pkgname/MDic/$pkgver/$pkgname-$pkgver.tar.gz)
+md5sums=('d8e0397b3480446fbd3d078ba24548d1')
+
+build() {
+  cd $srcdir/$pkgname
+  cmake -DCMAKE_INSTALL_PREFIX=/usr
+  make || return 1
+}
+
+package() {
+  cd $srcdir/$pkgname
+  make DESTDIR=$pkgdir install || return 1
+}
