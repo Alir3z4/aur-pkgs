@@ -6,6 +6,7 @@ _updict="Dictionaries"
 pkgver=1.0
 pkgrel=1
 pkgdesc="MDic Generic English-Persian dictionary(50259 entries)."
+url="http://mdic.gnufolks.org/dictionaries.html"
 arch=(any)
 license=("GPL3")
 depends=("mdic")
