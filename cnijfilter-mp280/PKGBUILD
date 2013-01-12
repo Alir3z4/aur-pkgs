@@ -38,12 +38,17 @@ source=(
 	'http://gdlp01.c-wss.com/gds/0/0100003020/01/cnijfilter-source-3.40-1.tar.gz'
         'fix.patch')
 md5sums=('609975a05d6050fcca88f312d3f35c6a'
-         'b315a08a6722706cc706f617307b88a8')
+         '1f4f7aa58be271e2d60b5f9615b1104d')
 
 build() {
+  msg "hey patchi"
   cd ${srcdir}/cnijfilter-source-${_pkgrealver}-${_pkgrealrel}/
   patch -p0 < ${startdir}/fix.patch
   sed -i -e 's/png_p->jmpbuf/png_jmpbuf(png_p)/' cnijfilter/src/bjfimage.c
+  cp ${srcdir}/cnijfilter-source-${_pkgrealver}-${_pkgrealrel}/cnijfilter/src/config* \
+    ${srcdir}/cnijfilter-source-${_pkgrealver}-${_pkgrealrel}/lgmon/src/
+  cp ${srcdir}/cnijfilter-source-${_pkgrealver}-${_pkgrealrel}/cnijfilter/src/config* \
+    ${srcdir}/cnijfilter-source-${_pkgrealver}-${_pkgrealrel}/cngpijmon/cnijnpr/cnijnpr/
 
   cd ${srcdir}/cnijfilter-source-${_pkgrealver}-${_pkgrealrel}/libs
   ./autogen.sh --prefix=/usr --program-suffix=mp280
