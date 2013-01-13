@@ -46,7 +46,6 @@ md5sums=(
 )
 
 build() {
-  msg "hey patchi"
   cd ${srcdir}/cnijfilter-source-${_pkgrealver}-${_pkgrealrel}/
   patch -p0 < ${startdir}/fix.patch
   sed -i -e 's/png_p->jmpbuf/png_jmpbuf(png_p)/' cnijfilter/src/bjfimage.c
