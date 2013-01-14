@@ -4,7 +4,7 @@
 
 pkgname=cnijfilter-mp250
 pkgver=3.40.1
-pkgrel=5
+pkgrel=5.1
 _pkgrealver=3.40
 _pkgrealrel=1
 pkgdesc="Canon IJ Printer Driver (MP250 series)"
