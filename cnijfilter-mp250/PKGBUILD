@@ -47,12 +47,18 @@ md5sums=(
     'ba9c7ec49e76bf74cc50702e362aba7b'
     '15e417cd427a920c83e4f28e225e428e'
     '07f698d8987632d9bb427d3f4a42a29a'
+)
 
 build() {
   cd ${srcdir}/cnijfilter-source-${_pkgrealver}-${_pkgrealrel}/
   patch -p0 < ${srcdir}/fix.patch
   patch -p0 < ${srcdir}/libpng.patch
   patch -p0 < ${srcdir}/automake_fix.patch
+  
+  cp ${srcdir}/cnijfilter-source-${_pkgrealver}-${_pkgrealrel}/cnijfilter/src/config* \
+    ${srcdir}/cnijfilter-source-${_pkgrealver}-${_pkgrealrel}/lgmon/src/
+  cp ${srcdir}/cnijfilter-source-${_pkgrealver}-${_pkgrealrel}/cnijfilter/src/config* \
+    ${srcdir}/cnijfilter-source-${_pkgrealver}-${_pkgrealrel}/cngpijmon/cnijnpr/cnijnpr/
 
   cd ${srcdir}/cnijfilter-source-${_pkgrealver}-${_pkgrealrel}/libs
   ./autogen.sh --prefix=/usr --program-suffix=mp250
@@ -125,7 +131,7 @@ build() {
     ${pkgdir}/usr/lib/
   install -m 755 ${srcdir}/cnijfilter-source-${_pkgrealver}-${_pkgrealrel}/com/${libdir}/libcnnet.so.1.2.0 \
     ${pkgdir}/usr/lib/
-    
+
   cd ${pkgdir}/usr/lib/
   ln -s libcnbpcmcm356.so.8.0.1 libcnbpcmcm356.so
   ln -s libcnbpcnclapi356.so.3.5.0 libcnbpcnclapi356.so
