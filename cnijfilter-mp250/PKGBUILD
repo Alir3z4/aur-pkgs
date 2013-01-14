@@ -1,5 +1,6 @@
-# Contributor: alessiofachechi <alessio.fachechi@gmail.com>
-# Special thanks to: olive, mirrr, GUiHKX, jeremy33
+# Maintainer: Alireza Savand <alireza.savand@gmail.com>
+# Special thanks to: olive, mirrr, GUiHKX, alessiofachechi, jeremy33,
+#		     jstitch, plv
 
 pkgname=cnijfilter-mp250
 pkgver=3.40.1
