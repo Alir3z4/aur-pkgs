@@ -1,4 +1,4 @@
-# Maintainer: Alireza Savand < alireza.savand with love gmail :|>
+# Maintainer: Alireza Savand <alireza.savand@gmail.com>
 
 pkgname=yodownet
 pkgver=2012.05.11
@@ -6,7 +6,7 @@ pkgrel=1
 pkgdesc="yoDownet, The Previous Generation Graphical Download Manager, Implemented on Qt"
 arch=(any)
 url="http://sourceforge.net/projects/yodownet"
-license=("GPLv3")
+license=("GPL3")
 makedepends=('qt' 'make')
 depends=('qt')
 provides=("yodownet")
