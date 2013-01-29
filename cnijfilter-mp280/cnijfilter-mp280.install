@@ -7,13 +7,11 @@ post_install() {
 }
 post_upgrade() {
 	if [ -x /sbin/ldconfig ]; then
-                /sbin/ldconfig
-        fi
+        /ldconfig
+    fi
 }
 post_remove() {
-	rm /usr/lib/cups/filter/pstocanonij
-
-        if [ -x /sbin/ldconfig ]; then
-                /sbin/ldconfig
-        fi
+    if [ -x /sbin/ldconfig ]; then
+        /sbin/ldconfig
+    fi
 }
