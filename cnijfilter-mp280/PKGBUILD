@@ -130,8 +130,9 @@ package() {
     # link moved from $pkgname.install file to be included in package
     install -dm755 "${pkgdir}/usr/lib/cups/filter"
     ln -s "pstocanonijmp280" "${pkgdir}/usr/lib/cups/filter/pstocanonij"
-
+    
     # install license file
+    cd ${srcdir}/cnijfilter-source-${_pkgrealver}-${_pkgrealrel}
     install -Dm644 "LICENSE-cnijfilter-${_pkgrealver}EN.txt" \
         "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE-cnijfilter-${_pkgrealver}EN.txt"
 }
