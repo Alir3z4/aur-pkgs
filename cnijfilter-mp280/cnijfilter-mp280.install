@@ -1,6 +1,4 @@
 post_install() {
-	ln -s /usr/lib/cups/filter/pstocanonijmp280 /usr/lib/cups/filter/pstocanonij
-
 	if [ -x /sbin/ldconfig ]; then
 		/sbin/ldconfig
 	fi
