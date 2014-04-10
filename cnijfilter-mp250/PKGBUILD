@@ -1,6 +1,14 @@
 # Maintainer: Alireza Savand <alireza.savand@gmail.com>
-# Special thanks to: olive, mirrr, GUiHKX, alessiofachechi, jeremy33,
-#		     jstitch, plv
+# Contributors:
+#	* olive
+#	* mirrr
+#	* GUiHKX
+#	* alessiofachechi <alessio.fachechi@gmail.com>
+#	* jeremy33
+#	* jstitch
+#	* plv
+#	* Scimmia
+#	* lorenzo.bandieri
 
 pkgname=cnijfilter-mp250
 pkgver=3.40.1
