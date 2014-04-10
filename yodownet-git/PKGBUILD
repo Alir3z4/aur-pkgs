@@ -2,7 +2,7 @@
 # Maintainer: Alireza Savand < alireza.savand with love gmail :|>
 
 pkgname=yodownet-git
-pkgver=20120210
+pkgver=20140223
 pkgrel=1
 pkgdesc="yoDownet, The Previous Generation Graphical Download Manager, Implemented on Qt"
 arch=(any)
