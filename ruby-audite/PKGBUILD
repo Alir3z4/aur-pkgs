@@ -10,6 +10,7 @@ arch=(i686 x86_64)
 url='http://georgi.github.com/audite'
 license=()
 depends=(ruby)
+makedepends=('portaudio')
 options=(!emptydirs)
 source=(https://rubygems.org/downloads/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
