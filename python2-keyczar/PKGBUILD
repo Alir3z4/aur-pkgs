@@ -6,7 +6,7 @@
 _pypkg="python-keyczar"
 pkgname="python2-keyczar"
 pkgver=0.71c
-pkgrel=1
+pkgrel=1.1
 pkgdesc="Toolkit for safe and simple cryptography"
 arch=('any')
 url="http://www.keyczar.org"
