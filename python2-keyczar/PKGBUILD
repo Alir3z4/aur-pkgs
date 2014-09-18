@@ -1,5 +1,7 @@
 # Maintainer: Alireza Savand <alireza.savand@gmail.com>
-# Contributor: Devin Cook <devin.c.cook@gmail.com>
+# Contributors: 
+#     * Devin Cook <devin.c.cook@gmail.com>
+#     * Lex Black <autumn-wind at web dot de>
 
 _pypkg="python-keyczar"
 pkgname="python2-keyczar"
