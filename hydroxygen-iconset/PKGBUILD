@@ -1,7 +1,8 @@
-# Contributor: Devin Cofer <ranguvar{AT]archlinux[DOT}us>
-# Contributor: William Díaz <wdiaz [at] archlinux [dot] us>
-# Contributor: Simone Pignatti <simo91.linux@gmail.com>
 # Maintainer: Alireza Savand <alireza.savand@gmail.com>
+# Contributors:
+#     * Devin Cofer <ranguvar{AT]archlinux[DOT}us>
+#     * William Díaz <wdiaz [at] archlinux [dot] us>
+#     * Simone Pignatti <simo91.linux@gmail.com>
 
 pkgname=hydroxygen-iconset
 pkgver=20090119
