@@ -1,7 +1,8 @@
-# Maintainer: lemanyk <lemanyk@gmail.com>
-# Contributor: Florian Friesdorf <archlinux@chaoflow.net>
-# Contributor: Laszlo Papp <djszapi @ gmail at com>
 # Maintainer: Alireza Savand <alireza.savand@gmail.com>
+# Contributors: 
+#     * lemanyk <lemanyk@gmail.com>
+#     * Florian Friesdorf <archlinux@chaoflow.net>
+#     * Laszlo Papp <djszapi @ gmail at com>
 
 pkgname=vim-pydiction
 pkgver=1.2.1
