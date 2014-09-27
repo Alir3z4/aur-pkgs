@@ -23,10 +23,14 @@ build() {
 		git clone $_gitroot $_gitname
 	fi
 	
+	mkdir -p "$srcdir/$_gitname/build"
+	cd "$srcdir/$_gitname/build"
+	qmake PREFIX=/usr .. 
+	make -j12
 }
 
 package() {
 	cd "$srcdir/$_gitname/build"
-	make DESTDIR="${pkgdir}" install || return 1
+	make install INSTALL_ROOT=$pkgdir
 	rm -rf $pkgdir/tests $pkgdir/usr/tests
 }
