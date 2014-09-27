@@ -3,7 +3,7 @@
 pkgname=qdjango-git
 pkgver=20111227
 pkgrel=1
-pkgdesc="QDjango is a simple yet powerful Object Relation Mapper (ORM) written in C++ and built on top of the  Qt library."
+pkgdesc="QDjango, a Qt-based C++ web framework"
 arch=(any)
 url="http://opensource.bolloretelecom.eu/projects/qdjango/"
 license=("GPLv3")
