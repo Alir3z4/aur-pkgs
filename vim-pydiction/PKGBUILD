@@ -5,8 +5,8 @@
 #     * Laszlo Papp <djszapi @ gmail at com>
 
 pkgname=vim-pydiction
-pkgver=1.2.1
-_scriptid=19587
+pkgver=1.2.3
+_scriptid=21842
 pkgrel=2
 pkgdesc="Allows you to auto-complete your Python code"
 arch=('any')
@@ -16,7 +16,7 @@ groups=('vim-plugins')
 depends=('vim' 'python2')
 install='pydiction.install'
 source=(${pkgname}.zip::http://www.vim.org/scripts/download_script.php?src_id=${_scriptid})
-md5sums=('39a96b2a35f0459d720176bfbce217ee')
+md5sums=('e3c438ce3342fd1cf83733011ddc504e')
 
 build() {
   cd ${srcdir}/pydiction-${pkgver}
