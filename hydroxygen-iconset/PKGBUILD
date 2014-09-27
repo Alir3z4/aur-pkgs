@@ -22,12 +22,12 @@ install="$pkgname.install"
 build() {
 	cd "$srcdir/iconset"
 
-	tar xf hydroxygen_iconset.tar.bz2 || return 1
-	find hydroxygen -type d -print0 | xargs -0 chmod 0775 || return 1
-	find hydroxygen -type f -print0 | xargs -0 chmod 0664 || return 1
-	install -Dm755 "$srcdir/hydroxygen-chtype" "$pkgdir/usr/bin/hydroxygen-chtype" || return 1
+	tar xf hydroxygen_iconset.tar.bz2
+	find hydroxygen -type d -print0 | xargs -0 chmod 0775
+	find hydroxygen -type f -print0 | xargs -0 chmod 0664
+	install -Dm755 "$srcdir/hydroxygen-chtype" "$pkgdir/usr/bin/hydroxygen-chtype"
 
-	install -Dm644 "hydroxygen/COPYING" "$pkgdir/usr/share/licenses/$pkgname/COPYING" || return 1
+	install -Dm644 "hydroxygen/COPYING" "$pkgdir/usr/share/licenses/$pkgname/COPYING"
 	mkdir -p "$pkgdir/usr/share/icons/"
-	mv hydroxygen/ "$pkgdir/usr/share/icons/" || return 1
+	mv hydroxygen/ "$pkgdir/usr/share/icons/"
 }
