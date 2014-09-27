@@ -6,6 +6,7 @@ All the pkgs contributed to the [AUR](https://aur.archlinux.org/).
 
 Issues/Bugs
 ===========
-If you find any issue or bug or whatever that would broke the pkg, of course the best place to report is tha pkg's comments itself at AUR
-
+If you find any issue or bug or whatever that would break the package, 
+of course the best place to report is tha packages's comment section itself 
+at AUR.
 
