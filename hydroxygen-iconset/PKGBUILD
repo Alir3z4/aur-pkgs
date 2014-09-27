@@ -21,7 +21,7 @@ sha256sums=('ff6e22c842c4f8a3f9a38dc6d0f78cfde116e22d8bee606db072b0c03d4389e5'
             'd99f13f554b9b87f2c618247af4413a9276e658e77ebc242bc2b1fbcaaaca4de')
 install="$pkgname.install"
 
-build() {
+package() {
 	cd "$srcdir/iconset"
 
 	tar xf hydroxygen_iconset.tar.bz2
