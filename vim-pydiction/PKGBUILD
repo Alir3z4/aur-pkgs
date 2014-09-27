@@ -18,12 +18,12 @@ install='pydiction.install'
 source=(${pkgname}.zip::http://www.vim.org/scripts/download_script.php?src_id=${_scriptid})
 md5sums=('e3c438ce3342fd1cf83733011ddc504e')
 
-build() {
-  cd ${srcdir}/pydiction-${pkgver}
+package() {
+  cd ${srcdir}/pydiction
 
-  install -Dm755 ${srcdir}/pydiction-${pkgver}/pydiction.py ${pkgdir}/usr/bin/pydiction.py
-  install -Dm644 ${srcdir}/pydiction-${pkgver}/complete-dict ${pkgdir}/usr/share/pydiction/complete-dict
-  install -Dm644 ${srcdir}/pydiction-${pkgver}/after/ftplugin/python_pydiction.vim ${pkgdir}/usr/share/vim/vimfiles/ftplugin/python_pydiction.vim
-  install -Dm644 ${srcdir}/pydiction-${pkgver}/README.md ${pkgdir}/usr/share/doc/${pkgname}/README.txt
+  install -Dm755 pydiction.py ${pkgdir}/usr/bin/pydiction.py
+  install -Dm644 complete-dict ${pkgdir}/usr/share/pydiction/complete-dict
+  install -Dm644 after/ftplugin/python_pydiction.vim ${pkgdir}/usr/share/vim/vimfiles/ftplugin/python_pydiction.vim
+  install -Dm644 README.md ${pkgdir}/usr/share/doc/${pkgname}/README.txt
 }
 
