@@ -12,7 +12,7 @@ depends=("qt4")
 provides=("qdjango")
 conflicts=("qdjango")
 
-_gitroot="git://git.bolloretelecom.eu/qdjango.git"
+_gitroot="git@github.com:jlaine/qdjango.git"
 _gitname=qdjango
 
 build() {
