@@ -6,7 +6,7 @@
 
 pkgname=hydroxygen-iconset
 pkgver=20090119
-pkgrel=2
+pkgrel=2.1
 pkgdesc="GTK+ port of the KDE4 Oxygen icon theme"
 arch=('i686' 'x86_64')
 url="http://deviantdark.deviantart.com/art/hydroxygen-iconset-100826865"
