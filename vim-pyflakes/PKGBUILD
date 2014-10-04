@@ -17,6 +17,7 @@ package() {
   cd $srcdir
 
   install -D -m644 $srcdir/pyflakes.vim $pkgdir/usr/share/vim/vimfiles/after/ftplugin/python/pyflakes.vim
+  rm -rf pyflakes/pyflakes/test/ pyflakes/{NEWS.txt,setup.py}
   cp -r pyflakes $pkgdir/usr/share/vim/vimfiles/after/ftplugin/python/pyflakes
 
   mkdir -p $pkgdir/usr/share/licenses/vim-pyflakes/
