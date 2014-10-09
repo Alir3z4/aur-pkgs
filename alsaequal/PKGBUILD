@@ -29,11 +29,14 @@ sha1sums=('aeb04e06821be82bea2e439758ca775903d62a37'
           'a3fb56bae56487cfb55492598a0fae3bf7a805ad')
 
 
+prepare() {
+  cd "${srcdir}/${pkgroot}"
+  
+  for f in ${srcdir}/*.patch; do patch < "$f"; done;
+}
+
 build() {
-  cd "$srcdir/$pkgname"
-  patch < ../alsaequal.patch
-  patch < ../false_error.patch
-  patch < ../alsaequal_caps_9.x.patch
+  cd "${srcdir}/${pkgroot}"
   make
 }
 
