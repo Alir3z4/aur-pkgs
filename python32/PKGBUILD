@@ -1,3 +1,9 @@
+# Maintainer: Alireza Savand <alireza.savand@gmail.com>
+# Contributors:
+#     * Christopher Arndt <chris@chrisarndt.de>
+#     * Simon Sapin <simon.sapin@kozea.fr>
+
+
 pkgname=python32
 pkgver=3.2.3
 pkgrel=2
